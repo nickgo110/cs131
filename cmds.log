@@ -1,10 +1,141 @@
     1  wget www.github.com 
     2  wget www.github.com
     3  passwd
-    4  cd myproject/
-    5  git commit -m "This is my first commit!"
-    6  git branch
-    7  history > cmds.log
-    8  git push https://github.com/nickgo110/cs131/blob/main/Worksheet1 cmds.log
-    9  git push Worksheet1 cmds.log
-   10  history > cmds.log
+    4  cd ~/Desktop
+    5  git status
+    6  brew install git
+    7  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    8  wget www.github.com
+    9  git --version
+   10  ~/Desktop
+   11  mkdir myproject
+   12  cd myproject/
+   13  git init
+   14  touch ngomez.txt
+   15  ls
+   16  git status
+   17  git add
+   18  git status
+   19  git add ngomez.txt
+   20  git status
+   21  git commit -m "This is my first commit!"
+   22  git branch
+   23  git checkout -b mybranch
+   24  git branch
+   25  git push origin mybranch
+   26  git remote add origin https://github.com/nickgo110/cs131.git
+   27  git push -u origin master
+   28  git branch
+   29  git remote add https://github.com/nickgo110/cs131.git
+   30  git push -u origin mybranch
+   31  git push -u origin master
+   32  git checkout - b master
+   33  git checkout -b master
+   34  git status
+   35  git remote add origin https://github.com/nickgo110/cs131.git
+   36  git push -u origin master
+   37  git push origin master
+   38  git branch
+   39  git push origin mybranch
+   40  git push origin
+   41  git push --set-upstream origin master
+   42  git branch
+   43  history > cmd.logs
+   44  git push origin cmd.logs
+   45  git push origin mybranch
+   46  git checkout -b mybranch
+   47  git branch
+   48  git push origin mybranch
+   49  git pull origin master
+   50  git pull origin mybranch
+   51  history > cmds.log
+   52  git push origin cmds.log
+   53  wget www.github.com
+   54  history > cmds.log
+   55  git push origin cmds.log
+   56  git --version
+   57  git branch
+   58  git init
+   59  git status
+   60  git branch
+   61  git remote add origin https://github.com/nickgo110/cs131.git
+   62  git push -u origin mybranch
+   63  wget www.github.com
+   64  cd ~/Desktop
+   65  mkdir myproject
+   66  cd myproject/
+   67  git ini
+   68  git init
+   69  touch ngomez.txt
+   70  ls
+   71  git status
+   72  git push origin mybranch
+   73  git push origin my-branch
+   74  git push https://github.com/nickgo110/cs131.git mybranch
+   75  git branch -b
+   76  git branch
+   77  git push https://github.com/nickgo110/cs131.git main
+   78  git remote add origin https://github.com/nickgo110/cs131.git
+   79  git push -u origin main
+   80  git push -u origin master
+   81  git checkout -b master
+   82  git push -u origin master
+   83  git branch
+   84  git checkout -b test
+   85  git branch
+   86  git commit -m "This is my first commit!"
+   87  git config --global user.email "nickgomez110@gmail.com"
+   88  git config --global user.name "Nicholas Gomez"
+   89  git commit -m "This is my first commit!"
+   90  git branch
+   91  git remote add origin https://github.com/nickgo110/cs131.git
+   92  git push -u origin master
+   93  git push -u origin test
+   94  git pull origin test
+   95  history > cmds.log
+   96  git push origin cmds.log
+   97  git history > cmds.log
+   98  history > cmds.log
+   99  history > cmd.log
+  100  cd myproject/
+  101  git commit -m "This is my first commit!"
+  102  git branch
+  103  history > cmds.log
+  104  git push https://github.com/nickgo110/cs131/blob/main/Worksheet1 cmds.log
+  105  git push Worksheet1 cmds.log
+  106  history > cmds.log
+  107  git push https://github.com/nickgo110/cs131/blob/main/Worksheet1 cmds.log
+  108  git branch
+  109  git commit -m "Hi!"
+  110  git add cmds.log
+  111  history > cmds.log
+  112  Downloads % python3
+  113  echo $SHELL
+  114  cd ..
+  115  pwd
+  116  mkdir exampleDir
+  117  ls
+  118  touch a.txt
+  119  man ls
+  120  git branch
+  121  history > cmds.log
+  122  mkdir myproject
+  123  cd myproject/
+  124  git init
+  125  touch ngomez.txt
+  126  ls
+  127  git status
+  128  git commit -m "Commit!"
+  129  git remote add origin https://github.com/nickgo110/cs131.git
+  130  git push origin test
+  131  history > cmds.log
+  132  git push origin cmds.log
+  133  git push -u origin test
+  134  history > cmds.log
+  135  git push -u origin cmds.log
+  136  git push origin history
+  137  git push -u cmds.log test
+  138  git push -u cmds.log https://github.com/nickgo110/cs131.git
+  139  git push -u history https://github.com/nickgo110/cs131.git
+  140  git clone https://github.com/nickgo110/cs131.git
+  141  history > cmds.log
