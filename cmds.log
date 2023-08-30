@@ -1,0 +1,10 @@
+    1  wget www.github.com 
+    2  wget www.github.com
+    3  passwd
+    4  cd myproject/
+    5  git commit -m "This is my first commit!"
+    6  git branch
+    7  history > cmds.log
+    8  git push https://github.com/nickgo110/cs131/blob/main/Worksheet1 cmds.log
+    9  git push Worksheet1 cmds.log
+   10  history > cmds.log
