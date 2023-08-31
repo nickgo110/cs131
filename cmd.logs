@@ -1,0 +1,41 @@
+    1  wget www.github.com 
+    2  cd ~/Desktop
+    3  git status
+    4  brew install git
+    5  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    6  wget www.github.com
+    7  git --version
+    8  ~/Desktop
+    9  mkdir myproject
+   10  cd myproject/
+   11  git init
+   12  touch ngomez.txt
+   13  ls
+   14  git status
+   15  git add
+   16  git status
+   17  git add ngomez.txt
+   18  git status
+   19  git commit -m "This is my first commit!"
+   20  git branch
+   21  git checkout -b mybranch
+   22  git branch
+   23  git push origin mybranch
+   24  git remote add origin https://github.com/nickgo110/cs131.git
+   25  git push -u origin master
+   26  git branch
+   27  git remote add https://github.com/nickgo110/cs131.git
+   28  git push -u origin mybranch
+   29  git push -u origin master
+   30  git checkout - b master
+   31  git checkout -b master
+   32  git status
+   33  git remote add origin https://github.com/nickgo110/cs131.git
+   34  git push -u origin master
+   35  git push origin master
+   36  git branch
+   37  git push origin mybranch
+   38  git push origin
+   39  git push --set-upstream origin master
+   40  git branch
+   41  history > cmd.logs

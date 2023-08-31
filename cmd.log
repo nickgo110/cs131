@@ -1,0 +1,40 @@
+    1  wget www.github.com 
+    2  wget www.github.com
+    3  passwd
+    4  wget www.github.com
+    5  cd ~/Desktop
+    6  mkdir myproject
+    7  cd myproject/
+    8  git ini
+    9  git init
+   10  touch ngomez.txt
+   11  ls
+   12  git status
+   13  git push origin mybranch
+   14  git push origin my-branch
+   15  git push https://github.com/nickgo110/cs131.git mybranch
+   16  git branch -b
+   17  git branch
+   18  git push https://github.com/nickgo110/cs131.git main
+   19  git remote add origin https://github.com/nickgo110/cs131.git
+   20  git push -u origin main
+   21  git push -u origin master
+   22  git checkout -b master
+   23  git push -u origin master
+   24  git branch
+   25  git checkout -b test
+   26  git branch
+   27  git commit -m "This is my first commit!"
+   28  git config --global user.email "nickgomez110@gmail.com"
+   29  git config --global user.name "Nicholas Gomez"
+   30  git commit -m "This is my first commit!"
+   31  git branch
+   32  git remote add origin https://github.com/nickgo110/cs131.git
+   33  git push -u origin master
+   34  git push -u origin test
+   35  git pull origin test
+   36  history > cmds.log
+   37  git push origin cmds.log
+   38  git history > cmds.log
+   39  history > cmds.log
+   40  history > cmd.log
