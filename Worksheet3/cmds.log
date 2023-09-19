@@ -1,0 +1,759 @@
+    1  wget www.github.com 
+    2  wget www.github.com
+    3  passwd
+    4  cd ~/Desktop
+    5  git status
+    6  brew install git
+    7  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    8  wget www.github.com
+    9  git --version
+   10  ~/Desktop
+   11  mkdir myproject
+   12  cd myproject/
+   13  git init
+   14  touch ngomez.txt
+   15  ls
+   16  git status
+   17  git add
+   18  git status
+   19  git add ngomez.txt
+   20  git status
+   21  git commit -m "This is my first commit!"
+   22  git branch
+   23  git checkout -b mybranch
+   24  git branch
+   25  git push origin mybranch
+   26  git remote add origin https://github.com/nickgo110/cs131.git
+   27  git push -u origin master
+   28  git branch
+   29  git remote add https://github.com/nickgo110/cs131.git
+   30  git push -u origin mybranch
+   31  git push -u origin master
+   32  git checkout - b master
+   33  git checkout -b master
+   34  git status
+   35  git remote add origin https://github.com/nickgo110/cs131.git
+   36  git push -u origin master
+   37  git push origin master
+   38  git branch
+   39  git push origin mybranch
+   40  git push origin
+   41  git push --set-upstream origin master
+   42  git branch
+   43  history > cmd.logs
+   44  git push origin cmd.logs
+   45  git push origin mybranch
+   46  git checkout -b mybranch
+   47  git branch
+   48  git push origin mybranch
+   49  git pull origin master
+   50  git pull origin mybranch
+   51  history > cmds.log
+   52  git push origin cmds.log
+   53  wget www.github.com
+   54  history > cmds.log
+   55  git push origin cmds.log
+   56  git --version
+   57  git branch
+   58  git init
+   59  git status
+   60  git branch
+   61  git remote add origin https://github.com/nickgo110/cs131.git
+   62  git push -u origin mybranch
+   63  wget www.github.com
+   64  cd ~/Desktop
+   65  mkdir myproject
+   66  cd myproject/
+   67  git ini
+   68  git init
+   69  touch ngomez.txt
+   70  ls
+   71  git status
+   72  git push origin mybranch
+   73  git push origin my-branch
+   74  git push https://github.com/nickgo110/cs131.git mybranch
+   75  git branch -b
+   76  git branch
+   77  git push https://github.com/nickgo110/cs131.git main
+   78  git remote add origin https://github.com/nickgo110/cs131.git
+   79  git push -u origin main
+   80  git push -u origin master
+   81  git checkout -b master
+   82  git push -u origin master
+   83  git branch
+   84  git checkout -b test
+   85  git branch
+   86  git commit -m "This is my first commit!"
+   87  git config --global user.email "nickgomez110@gmail.com"
+   88  git config --global user.name "Nicholas Gomez"
+   89  git commit -m "This is my first commit!"
+   90  git branch
+   91  git remote add origin https://github.com/nickgo110/cs131.git
+   92  git push -u origin master
+   93  git push -u origin test
+   94  git pull origin test
+   95  history > cmds.log
+   96  git push origin cmds.log
+   97  git history > cmds.log
+   98  history > cmds.log
+   99  history > cmd.log
+  100  cd myproject/
+  101  git commit -m "This is my first commit!"
+  102  git branch
+  103  history > cmds.log
+  104  git push https://github.com/nickgo110/cs131/blob/main/Worksheet1 cmds.log
+  105  git push Worksheet1 cmds.log
+  106  history > cmds.log
+  107  git push https://github.com/nickgo110/cs131/blob/main/Worksheet1 cmds.log
+  108  git branch
+  109  git commit -m "Hi!"
+  110  git add cmds.log
+  111  history > cmds.log
+  112  Downloads % python3
+  113  echo $SHELL
+  114  cd ..
+  115  pwd
+  116  mkdir exampleDir
+  117  ls
+  118  touch a.txt
+  119  man ls
+  120  git branch
+  121  history > cmds.log
+  122  mkdir myproject
+  123  cd myproject/
+  124  git init
+  125  touch ngomez.txt
+  126  ls
+  127  git status
+  128  git commit -m "Commit!"
+  129  git remote add origin https://github.com/nickgo110/cs131.git
+  130  git push origin test
+  131  history > cmds.log
+  132  git push origin cmds.log
+  133  git push -u origin test
+  134  history > cmds.log
+  135  git push -u origin cmds.log
+  136  git push origin history
+  137  git push -u cmds.log test
+  138  git push -u cmds.log https://github.com/nickgo110/cs131.git
+  139  git push -u history https://github.com/nickgo110/cs131.git
+  140  git clone https://github.com/nickgo110/cs131.git
+  141  history > cmds.log
+  142  cd myproject/
+  143  git init
+  144  touch ngomez.txt
+  145  ls
+  146  git status
+  147  git add cmds.log
+  148  git commit -m "adding history file"
+  149  git push origin main
+  150  git branch
+  151  git push origin test
+  152  git push origin main
+  153  git push -u origin main
+  154  git remote add origin https://github.com/nickgo110/cs131.git
+  155  git checkout -b main
+  156  git branch
+  157  git push -u origin main
+  158  cd myproject/
+  159   cd ~/.ssh && ssh-keygen
+  160  touch ngomez.txt
+  161  git init
+  162  git add .
+  163  git status
+  164   cd ~/.ssh && ssh-keygen
+  165  cd ~/.ssh && ssh-keygen
+  166  mkdir ~/.ssh
+  167  cd ~/.ssh && ssh-keygen
+  168  cat id_rsa.pub
+  169  cd ..
+  170  ls
+  171  cd myproject/
+  172  git status
+  173  git commit -m "SSH tutorial"
+  174  git status
+  175  git push
+  176  git remote add origin git@github.com:nickgo110/cs131.git
+  177  git push
+  178  git push --set-upstream origin main
+  179  git checkout -b master
+  180  git push --set-upstream origin master
+  181  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/spotify-2023.csv
+  182  cd myproject/
+  183  touch ngomez.txt
+  184  ls -ltr
+  185  git init
+  186  git add ngomez.txt
+  187  status
+  188  git status
+  189  touch dontcommit.txt
+  190  git status
+  191  cd myproject/
+  192  git status
+  193  ls
+  194  git rm cmd.log
+  195  git rm dontcommit.txt
+  196  git rm cmd.logs
+  197  git rm spotify-2023.csv
+  198  ls
+  199  git clone https://github.com/nickgo110/cs131.git
+  200  git clone git@github.com:nickgo110/cs131.git
+  201  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/spotify-2023.csv
+  202  vi spotify-2023.csv
+  203  vi sort.txt
+  204  cat sort.txt
+  205  sort sort.txt
+  206  cat sort.txt
+  207  wc sort.txt
+  208  wc -1 sort.txt
+  209  wc 1 sort.txt
+  210  wc -w sort.txt
+  211  vi sort.txt
+  212  wc sort.txt
+  213  wc -1 sort.txt
+  214  grep "Tyler" spotify-2023.csv
+  215  grep -i  "eminem" spotify-2023.csv
+  216  history
+  217  history > cmds.log
+  218  ls
+  219  cat cmds.log
+  220  grep -i "eminem" spotify-2023.csv > results_eminem.txt
+  221  ls
+  222  cat results_eminem.txt 
+  223  wc -l eminemResults.txt
+  224  grep -v "eminem" spotify-2023.csv
+  225  ls
+  226  wc -l results_eminem.txt
+  227  wc -l spotify-2023.csv 
+  228  grep -v "Eminem" spotify-2023.csv 
+  229  grep -v "Eminem" spotify-2023.csv > result_without_eminem.txt
+  230  wc -l result_without_eminem.txt 
+  231  grep -iv "Eminem" spotify-2023.csv > result_without_eminem.txt
+  232  wc -l result_without_eminem.txt 
+  233  grep -iv "eminem" spotify-2023.csv | wc -l 
+  234  history
+  235  cd ~/Desktop
+  236  mkdir sampledata
+  237  cd sampledata/
+  238  history
+  239  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/Global%20YouTube%20Statistics.csv
+  240  vi Global Youtube Statistics.csv
+  241  git rm Global Youtube Statistics.csv
+  242  ls
+  243  git rm Global%20Youtube%20Statistics.csv
+  244  vi spotify-2023.csv
+  245  history
+  246  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/Global%20YouTube%20Statistics.csv
+  247  wc -l Global Youtube Statistics.csv
+  248  wc -l Global%20YouTube%20Statistics.csv
+  249  vi Global%20YouTube%20Statistics.csv
+  250  ls
+  251  vi 'Global Youtube Statistics.csv'
+  252  view spotify-023.csv
+  253  view spotify-2023.csv
+  254  view 'Global Youtube Statistics.csv'
+  255  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/Global%20YouTube%20Statistics.csv
+  256  view Global Youtube Statistics.csv
+  257  ls
+  258  view 'Global Youtube Statistics.csv'
+  259  view 'Global YOutube Statistics.csv.1'
+  260  view 'Global Youtube Statistics.csv.1'
+  261  view Global%20YouTube%20Statistics.csv
+  262  view spotify-2023.csv
+  263  view 'Global YouTube Statistics.csv'
+  264  vi 'Global Youtube Statistics.csv'
+  265  vi 'Global YouTube Statistics.csv'
+  266  grep "United States" 'Global YouTube Statistics.csv'
+  267  grep "Music" 'Global YouTube Statistics.csv'
+  268  grep -iv "Music" 'Global YouTube Statistics.csv' | wc -l
+  269  history
+  270  grep -iv "Music" 'Global YouTube Statistics.csv' | wc -l > counts.txt
+  271  ls
+  272  vi counts.txt
+  273  grep "Music" 'Global YouTube Statistics.csv' | wc -l
+  274  grep "Music" 'Global YouTube Statistics.csv' | wc -l > counts.txt
+  275  view counts.txt
+  276  grep -iv "Music" 'Global YouTube Statistics.csv' | wc -l >> counts.txt
+  277  view counts.txt
+  278  vi counts.txt
+  279  view counts.txt
+  280  history > cmds.log
+  281  view cmds.log
+  282  git remote add origin https://github.com/nickgo110/cs131/tree/main/Worksheet2
+  283  git remote add origin https://github.com/nickgo110/cs131.git
+  284  git remote add origin git@github.com:nickgo110/cs131.git
+  285  git remote add git@github.com:nickgo110/cs131.git
+  286  git remote add https://github.com/nickgo110/cs131.git
+  287  git branch
+  288  git status
+  289  ls
+  290  git init
+  291  git branch
+  292  git branch -m main
+  293  git branch
+  294  git config --global init.defaultBranch main
+  295  git branch
+  296  cd myproject/
+  297  git branch
+  298  history
+  299  git remote add origin https://github.com/nickgo110/cs131.git
+  300  git mv https://github.com/nickgo110/cs131.git https://github.com/nickgo110/cs131/tree/main/Worksheet2
+  301  git status
+  302  git add spotify-2023.csv
+  303  git branch main
+  304  git checkout -b main
+  305  git checkout main
+  306  ls
+  307  git add Worksheet2
+  308  git add https://github.com/nickgo110/cs131/tree/main/Worksheet2
+  309  git add Worksheet2/
+  310  git add Worksheet2
+  311  git add cs131
+  312  git add cs131/Worksheet2
+  313  echo $SHELL
+  314  echo SHELL
+  315  cd nick/
+  316  pwd
+  317  cd nick/
+  318  ls
+  319  mkdir nick
+  320  cd nick/
+  321  pwd
+  322  cd SHOME
+  323  cd $HOME
+  324  pwd
+  325  cd $USER
+  326  echo $USER
+  327  num1=10
+  328  num2=20
+  329  num3 = 30
+  330  num3=30
+  331  num1+num2
+  332  echo num1+num2
+  333  echo $num1+num2
+  334  echo $num1+$num2
+  335  echo $($num1+$num2)
+  336  echo (($num1+$num2))
+  337  echo $(($num1+$num2))
+  338  echo $((num1+num2))
+  339  echo $num1
+  340  echo $($num1+$num2)
+  341  a='abc'
+  342  $a
+  343  echo $a
+  344  echo $adef
+  345  echo $(a)def
+  346  echo ${a}def
+  347  name() { echo "CS131"; }
+  348  export -f name
+  349  name
+  350  echo $a
+  351  echo $?
+  352  ls
+  353  mkdir notempty
+  354  cd notempty/
+  355  touch a.txt
+  356  cd ..
+  357  ls
+  358  echo $?
+  359  rmdir notempty/
+  360  echo $?
+  361  ech "a"
+  362  echo $?
+  363  mkdir notempty
+  364  cd notempty/
+  365  wget github.com
+  366  vi index.html
+  367  echo "Hello" > index.html 
+  368  vi index.html 
+  369  echo "World!" >> index.html
+  370  vi index.html 
+  371  ls -a
+  372  vi .bashrc
+  373  source .bashrc
+  374  cd $HOME
+  375  ls -a
+  376  git init
+  377  git remote add origin https://github.com/nickgo110/cs131.git
+  378  git push -u origin main
+  379  git branch
+  380  mkdir ngomez
+  381  mkdir myproject
+  382  cd myproject/
+  383  ls
+  384  git init
+  385  git branch
+  386  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/Global%20YouTube%20Statistics.csv
+  387  ls
+  388  grep "United States" 'Global YouTube Statistics.csv'
+  389  grep "Music" 'Global YouTube Statistics.csv' | wc -l > counts.txt
+  390  view counts.txt
+  391  grep -iv "Music" 'Global YouTube Statistics.csv' | wc -l >> counts.txt
+  392  view counts.txt
+  393  vi counts.txt
+  394  view counts.txt
+  395  history > cmds.log
+  396  view cmds.log
+  397  cd myproject/
+  398  ls
+  399  cd $HOME
+  400  cd myproject/
+  401  cd $HOME
+  402  cd cs131/
+  403  cd myproject/
+  404  cd cs131/
+  405  ls
+  406  ls -ltr
+  407  cd Worksheet1/
+  408  git status
+  409  git add
+  410  git add .
+  411  git commit
+  412  git push
+  413  ls
+  414  mkdir Worksheet2
+  415  cd Worksheet2
+  416  cd ..
+  417  cd Worksheet2
+  418  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/Global%20YouTube%20Statistics.csv
+  419  grep "United States" 'Global YouTube Statistics.csv'
+  420  grep "Music" 'Global YouTube Statistics.csv' | wc -l > counts.txt
+  421  view counts.txt
+  422  grep "Tyler" spotify-2023.csv
+  423  grep -iv "Music" 'Global YouTube Statistics.csv' | wc -l >> counts.txt
+  424  view counts.txt
+  425  vi counts.txt
+  426  view counts.txt
+  427  history > cmds.log
+  428  view cmds.log
+  429  cd cs131/
+  430  cd ..
+  431  git commit
+  432  git add WorkSheet2/
+  433  git add Worksheet2
+  434  git commit
+  435  git push
+  436  ls
+  437  git status
+  438  git remote add origin https://github.com/nickgo110/cs131.git
+  439  git push -u origin main
+  440  git pull origin main
+  441  git push -u origin main
+  442  git status
+  443  git pull -u origin main
+  444  git push origin main
+  445  git pull origin main
+  446  ls
+  447  git log
+  448  git push
+  449  git status
+  450  git commit Worksheet2/Global YouTube Statistics.csv
+  451  git add Worksheet2/Global YouTube Statistics.csv
+  452  git commit
+  453  git add .
+  454  git pull origin main
+  455  git add .
+  456  git commit -m "adding new files"
+  457  git push origin main
+  458  git clone https://github.com/nickgo110/cs131.git
+  459  ls
+  460  git rm index.html.1
+  461  git rm Global Youtube Statistics.csv
+  462  echo 'Hello, $USER'
+  463  echo "Hello, $USER"
+  464  view spotify-2023.csv
+  465  ls
+  466  git rm spotify-023.csv
+  467  fcount='wc -1 spotify-2023.csv'
+  468  echo "line count is : $fcount"
+  469  fcount=`wc -1 spotify-2023.csv`
+  470  fcount =`wc -l spotify-2023.csv`
+  471  fcount=`wc -l spotify-2023.csv`
+  472  echo "line count is : $fcount"
+  473  cd sampledata/
+  474  history
+  475  echo $HOME
+  476  cd $HOME
+  477  cd /etc/
+  478  vi passwd
+  479  cat passwd | grep 'nick'
+  480  view passwd
+  481  cat passwd | grep 'nicholas'
+  482  cat shadow | grep 'nicholasf23'
+  483  cat shadow | grep 'ashish'
+  484  cat shadow | grep 'ashishf23'
+  485  view shadow
+  486  sudo vi shadow
+  487  sudo vi shado
+  488  man su
+  489  ls
+  490  $HOME
+  491  cd $HOME
+  492  ls
+  493  cd cs131/
+  494  cd cs131
+  495  cd ..
+  496  :q
+  497  cd $HOME
+  498  cd myproject/
+  499  ls
+  500  cd cs131/
+  501  ls
+  502  :q
+  503  cd $HOME
+  504  cd ngomez
+  505  ls
+  506  cd $HOME
+  507  cd nick
+  508  ls
+  509  cd $HOME
+  510  cat group | grep 'wheel'
+  511  cd /etc/
+  512  ls
+  513  vi group
+  514  cat group | grep 'wheel'
+  515  ls -l
+  516  cd $HOME
+  517  ls -l
+  518  cd myproject/
+  519  ls
+  520  cd $HOME
+  521  touch file.txt
+  522  ls -ltr file.txt
+  523  ls
+  524  git rm Global
+  525  touch a.txt
+  526  ls -ltr a.txt
+  527  ls -l
+  528  cd sampledata
+  529  ls
+  530  git rm Global
+  531  cd $HOME
+  532  clear history
+  533  clear cmds.log
+  534  ls
+  535  cd myproject
+  536  ls
+  537  cd cs131
+  538  ls
+  539  mkdir Worksheet3
+  540  ls
+  541  cd Worksheet3/
+  542  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/Global%20YouTube%20Statistics.csv
+  543  ls
+  544  view 'Global YouTube Statistics.csv'
+  545  history
+  546  grep "highest_monthly_earnings" 'Global YouTube Statistics.csv'
+  547  sort "United States" 'Global YouTube Statistics.csv' > ws3.txt
+  548  ls
+  549  view cs3.txt
+  550  sort -k16,16nr 'Global YouTube Statistics.csv' > ws3.txt
+  551  view ws3.txt
+  552  sort -k16.16nr Global\ YouTube\ Statistics.csv >> ws3.txt
+  553  view ws3.txt
+  554  vi ws3.txt
+  555  view ws3.txt
+  556  git rm ws3.txt
+  557  rm ws3.txt
+  558  ls
+  559  sort -k16,16nr 'Global YouTube Statistics.csv' >> ws3.txt
+  560  ls
+  561  view ws3.txt
+  562  rm ws3.txt
+  563  sort -r 'Global YouTube Statistics.csv'
+  564  sort -k16,16nr Global\ YouTube\ Statistics.csv >> ws3.txt
+  565  view ws3.txt
+  566  rm ws3.txt
+  567  sort -k16 "United States" 'Global YouTube Statistics.csv' > ws3.txt
+  568  sort -k16 'Global YouTube Statistics.csv' > ws3.txt
+  569  view ws3.txt
+  570  sort -16nr 'Global YouTube Statistics.csv' > ws3.txt
+  571  sort 16nr -'Global YouTube Statistics.csv' > ws3.txt
+  572  sort -nr16 'Global YouTube Statistics.csv' >> ws3.txt
+  573  sudo useradd coffee
+  574  useradd coffee
+  575  cat /etc/passwd | grep 'coffee'
+  576  cat /etc/groups
+  577  cat /etc/group
+  578  cat /etc/group | grep wheel
+  579  cron
+  580  crontab
+  581  crontab -e
+  582  date
+  583  cd $HOME
+  584  crontab -l
+  585  cat newcron.txt
+  586  date
+  587  crontab -l
+  588  cat newcron.txt
+  589  crontab -l
+  590  crontab -e
+  591  crontab -l
+  592  crontab -e
+  593  pwd
+  594  mkdir newDir
+  595  cd newDir
+  596  ls
+  597  ls -a
+  598  cd ..
+  599  mkdir newDir5
+  600  cd newDir5
+  601  ls -a
+  602  chmod 077 newDir5
+  603  chmod g-rwx newDir5
+  604  cd ..
+  605  chmod g-rwx newDir5
+  606  ls -ltr
+  607  man chmod
+  608  chmod a+r-wx newDir5
+  609  ls -ltr
+  610  rm index.html.1
+  611  rm index.html.2
+  612  rm index.html.3
+  613  rm Global%20%YouTube%20Statistics.csv
+  614  rm Global%20YouTube%20Statistics.csv
+  615  rm spotify-023.csv
+  616  rm 'Global YouTube Statistics.csv.1'
+  617  rm Global
+  618  rm 'Global Youtube Statistics.csv'
+  619  ls
+  620  find . -name newDir
+  621  ls
+  622  find . -name "newDir*"
+  623  cs newDir
+  624  cat /newDir/a.txt
+  625  ls
+  626  cat newDir/a.txt
+  627  cd newDir
+  628  cd $HOME
+  629  ls
+  630  cd myproject/
+  631  ls
+  632  cd cs131/
+  633  ls
+  634  cd Worksheet3
+  635  ls
+  636  view 'Global YouTube Statistics.csv'
+  637  view ws3.txt
+  638  view 'Global YouTube Statistics.csv'
+  639  grep "United States" 'Global YouTube Statistics.csv' | grep "United Kingdom" 'Global YouTube Statistics.csv' | grep "India" 'Global YouTube Statistics.csv' > ws3.txt
+  640  view ws3.txt
+  641  view 'Global YouTube Statistics.csv'
+  642  sort -t',' -k2 -n -r 'Global YouTube Statistics.csv' >> ws3.txt
+  643  view ws3.txt
+  644  sort -t',' -k16 -n -r 'Global YouTube Statistics.csv' > ws3.txt
+  645  view ws3.txt
+  646  grep "United States" 'Global YouTube Statistics.csv' | grep "United Kingdom" 'Global YouTube Statistics.csv' | grep "India" 'Global YouTube Statistics.csv > ws3.txt
+  647  :q
+  648  view ws3.txt
+  649  cd myproject/
+  650  cd cs131/
+  651  cd Worksheet3/
+  652  view ws3.txt
+  653  view 'Global YouTube Statistics.csv'
+  654  view ws3.txt
+  655  grep "United States" 'Global YouTube Statistics.csv' | grep "United Kingdom" 'Global YouTube Statistics.csv' | grep "India" 'Global YouTube Statistics.csv > ws3.txt
+  656  fk
+  657  flsfl
+  658  l
+  659  l
+  660  lf
+  661  l
+  662  l
+  663  l
+  664  w
+  665  s/f
+  666  sf
+  667  f
+  668  ws3.txt
+  669  g/g//
+  670  .af
+  671  .
+  672  .c
+  673  :qe
+  674  ws3.txt/
+  675  :q
+  676  cd myproject/
+  677  cd cs131/
+  678  cd Worksheet3/
+  679  grep "United States" 'Global YouTube Statistics.csv' | grep "United Kingdom" 'Global YouTube Statistics.csv' | grep "India" 'Global YouTube Statistics.csv > ws3.txt
+  680  ws3.txt
+  681  grep "United States" 'Global YouTube Statistics.csv' | grep "United Kingdom" 'Global YouTube Statistics.csv' | grep "India" 'Global YouTube Statistics.csv > ws3.txt
+  682  ws3.txt
+  683  grep "United States" 'Global YouTube Statistics.csv' | grep "United Kingdom" 'Global YouTube Statistics.csv' | grep "India" 'Global YouTube Statistics.csv' > ws3.txt
+  684  view ws3.txt
+  685  sort -t',' -k2 -n -r 'Global YouTube Statistics.csv' >> ws3.txt
+  686  view ws3.txt
+  687  grep "Sports" 'Global YouTube Statistics.csv' | grep "Education" 'Global YouTube Statistics.csv' | grep "Entertainment" 'Global YouTube Statistics.csv' >> ws3.txt
+  688  view ws3.txt
+  689  cd myproject/
+  690  cd ws131/
+  691  cd ws131
+  692  cd cs131
+  693  cd Worksheet3/
+  694  view ws3.txt
+  695  grep "Sports" 'Global YouTube Statistics.csv' | grep "Education" 'Global YouTube Statistics.csv' | grep "Entertainment" 'Global YouTube Statistics.csv' > ws3.txt
+  696  view ws3.txt
+  697  view 'Global YouTube Statistics.csv' 
+  698  rm 'Global YouTube Statistics.csv' 
+  699  rm ws3.txt 
+  700  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/Global%20YouTube%20Statistics.csv
+  701  sort -t',' -k16 -n -r 'Global YouTube Statistics.csv' > ws3task1.txt
+  702  view ws3task1.txt
+  703  grep "United States" 'Global YouTube Statistics.csv' | grep "United Kingdom" 'Global YouTube Statistics.csv' | grep "India" 'Global YouTube Statistics.csv > ws3task1.txt
+  704  ws3task1.txt
+  705  grep "United States" 'Global YouTube Statistics.csv' | grep "United Kingdom" 'Global YouTube Statistics.csv' | grep "India" 'Global YouTube Statistics.csv > ws3task1.txt
+  706  ws3task1.txt
+  707  grep "United States" 'Global YouTube Statistics.csv' | grep "United Kingdom" 'Global YouTube Statistics.csv' | grep "India" 'Global YouTube Statistics.csv' > ws3task1.txt
+  708  view ws3.txt
+  709  view ws3task1.txt
+  710  sort -t',' -k2 -n -r 'Global YouTube Statistics.csv.1 > ws3task2.txt
+  711  sort -t',' -k2 -n -r 'Global YouTube Statistics.csv.1 > ws3task2.txt
+  712  ls
+  713  sort -t',' -k2 -n -r 'Global YouTube Statistics.csv.1' > ws3task2.txt
+  714  view ws3task2.txt
+  715  grep "Sports" 'Global YouTube Statistics.csv.1' | grep "Education" 'Global YouTube Statistics.csv.1' | grep "Entertainment" 'Global YouTube Statistics.csv.1" > ws3task2.txt
+  716  grep "Sports" 'Global YouTube Statistics.csv.1' | grep "Education" 'Global YouTube Statistics.csv.1' | grep "Entertainment" 'Global YouTube Statistics.csv.1" > ws3task2.txt
+  717  grep "Sports" 'Global YouTube Statistics.csv.1' | grep "Education" 'Global YouTube Statistics.csv.1' | grep "Entertainment" 'Global YouTube Statistics.csv.1" > ws3task2.txt
+  718  grep "Sports" 'Global YouTube Statistics.csv.1' | grep "Education" 'Global YouTube Statistics.csv.1' | grep "Entertainment" 'Global YouTube Statistics.csv.1" > ws3task2.txt
+  719  grep "Sports" 'Global YouTube Statistics.csv.1' | grep "Education" 'Global YouTube Statistics.csv.1' | grep "Entertainment" 'Global YouTube Statistics.csv.1" > ws3task2.txt
+  720  grep "Sports" 'Global YouTube Statistics.csv.1' | grep "Education" 'Global YouTube Statistics.csv.1' | grep "Entertainment" 'Global YouTube Statistics.csv.1" > ws3task2.txt
+  721  grep "Sports" 'Global YouTube Statistics.csv.1' | grep "Education" 'Global YouTube Statistics.csv.1' | grep "Entertainment" 'Global YouTube Statistics.csv.1" > ws3task2.txt
+  722  grep "Sports" 'Global YouTube Statistics.csv.1' | grep "Education" 'Global YouTube Statistics.csv.1' | grep "Entertainment" 'Global YouTube Statistics.csv.1" > ws3task2.txt
+  723  grep "Sports" 'Global YouTube Statistics.csv.1' | grep "Education" 'Global YouTube Statistics.csv.1' | grep "Entertainment" 'Global YouTube Statistics.csv.1" > ws3task2.txt
+  724  grep "Sports" 'Global YouTube Statistics.csv.1' | grep "Education" 'Global YouTube Statistics.csv.1' | grep "Entertainment" 'Global YouTube Statistics.csv.1" > ws3task2.txt
+  725  grep "Sports" 'Global YouTube Statistics.csv.1' | grep "Education" 'Global YouTube Statistics.csv.1' | grep "Entertainment" 'Global YouTube Statistics.csv.1" > ws3task2.txt
+  726  grep "Sports" 'Global YouTube Statistics.csv.1' | grep "Education" 'Global YouTube Statistics.csv.1' | grep "Entertainment" 'Global YouTube Statistics.csv.1" > ws3task2.txt
+  727  grep "Sports" 'Global YouTube Statistics.csv.1' | grep "Education" 'Global YouTube Statistics.csv.1' | grep "Entertainment" 'Global YouTube Statistics.csv.1" > ws3task2.txt
+  728  grep "Sports" 'Global YouTube Statistics.csv.1' | grep "Education" 'Global YouTube Statistics.csv.1' | grep "Entertainment" 'Global YouTube Statistics.csv.1" > ws3task2.txtrr
+  729  grep "Sports" 'Global YouTube Statistics.csv.1' | grep "Education" 'Global YouTube Statistics.csv.1' | grep "Entertainment" 'Global YouTube Statistics.csv.1" > ws3task2.txt
+  730  grep "Sports" 'Global YouTube Statistics.csv.1' | grep "Education" 'Global YouTube Statistics.csv.1' | grep "Entertainment" 'Global YouTube Statistics.csv.1" > ws3task2.txt
+  731  grep "Sports" 'Global YouTube Statistics.csv.1' | grep "Education" 'Global YouTube Statistics.csv.1' | grep "Entertainment" 'Global YouTube Statistics.csv.1" > ws3task2.txt
+  732  view ws3task2.txt
+  733  rm ws3task2.txt
+  734  ls
+  735  cd myproject/
+  736  cd cs131/
+  737  cd Worksheet3/
+  738  view ws3task2.txt
+  739  ls
+  740  sort -t',' -k2 -n -r 'Global YouTube Statistics.csv > ws3task2.txt
+
+sort -t',' -k2 -n -r 'Global YouTube Statistics.csv' > ws3task2.txt
+
+
+sort -t',' -k2 -n -r 'Global YouTube Statistics.csv > ws3task2.txt
+  741  sort -t',' -k2 -n -r 'Global YouTube Statistics.csv' > ws3task2.txt
+  742  view ws3task2.txt
+  743  view ws3task1.txt
+  744  grep "Sports" 'Global YouTube Statistics.csv' | grep "Education" 'Global YouTube Statistics.csv' | grep "Entertainment" 'Global YouTube Statistics.csv' > ws3task2.txt
+  745  view ws3task2.txt
+  746  grep "Sports" 'Global YouTube Statistics.csv' | grep "Education" 'Global YouTube Statistics.csv' | grep "Entertainment" 'Global YouTube Statistics.csv' >> ws3task2.txt
+  747  view ws3task2.txt
+  748  grep 'Sports\|Education\|Entertainment' 'Global YouTube Statistics.csv' > ws3.txt
+  749  grep 'Sports\|Education\|Entertainment' 'Global YouTube Statistics.csv' > ws3task2.txt
+  750  view ws3task2.txt
+  751  ls
+  752  rm ws3.txt
+  753  rm 'Global YouTube Statistics.csv.1'
+  754  history > cmds.log
