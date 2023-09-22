@@ -1,0 +1,18 @@
+    2  1. mkdir Assignment1
+    4  2. echo $SHELL
+    6  3. echo $HOME
+    8  4. id
+   11  5. mkdir myDir
+   24  5. chmod -w myDir
+   43  5. ls
+   44  5. ls -l
+   49  5. cd $HOME
+   59  6. mkdir myDir2
+   60  6. mkdir myDir3
+   61  7. cd myDir2/
+   62  7. touch myFile.txt
+   79  7. mv myFile.txt /mnt/scratch/FA23_CS131_Ashish/nicholasf23/myproject/cs131/Assignment1/myDir3
+   84  8. man free
+   86  8. free -m
+   92  9. cat /etc/os-release
+   95  10. ls -l /etc/os-release

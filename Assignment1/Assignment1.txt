@@ -1,0 +1,9 @@
+2. /bin/bash
+3. /mnt/scratch/FA23_CS131_Ashish/nicholasf23
+4. uid=1119(nicholasf23) gid=1119(nicholasf23) groups=1119(nicholasf23),77(S77)
+5. You can cd, "ls", and "ls -l" in it, but you can't create files under it.
+8.            total        used        free      shared  buff/cache   available
+Mem:          71367       12149        1456        1244       57761       55304
+Swap:          4119        1052        3067 
+9. VERSION="8.6 (Ootpa)", the os-release file contains this information.
+10. lrwxrwxrwx 
