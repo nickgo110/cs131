@@ -1,0 +1,7 @@
+    4 1. find /etc -type f > one.txt 2> two.txt
+    5 1. b. cat one.txt
+    6 1. b. cat two.txt
+    8 2. cut -d',' -f20-21 'Global YouTube Statistics.csv' | sort | uniq -ci
+    9 3. ps -u nicholasf23
+   10 4. vi file.txt
+   11 5. ps aux | grep "systemd"

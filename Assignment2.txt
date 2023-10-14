@@ -1,0 +1,3 @@
+1. a. We are trying to find only files, specifically system configuration files       and are looking at that in one.txt. For two.txt, we are seeing what errors      come up when finding the files.
+   b. I notice that one.txt contains all the system configuration files and 
+      two.txt contains files that you can't access.

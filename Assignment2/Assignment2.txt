@@ -1,0 +1,21 @@
+1. a. We are trying to find only files from the /etc, and trying to find errors when finding those files.
+   b. I see that one.txt contains all the system configuration files, and two.txt contains errors when trying to access
+      certain files
+2. As per the Dataset, Top 3 [Month, Year] with the most number of YouTube channels created were:
+   1. March,2006 with 15 channels
+   2. July,2014 with 13 channels
+   3. August,2014 with 12 channels
+   The commands used to find it was this: cut -d',' -f20-21 'Global YouTube Statistics.csv' | sort | uniq -ci
+   I used the cut command to specifically find the created year and month columns, with ',' to pass those columns to sort,
+   then I used uniq -ci to count how many repeated lines there were to see how many channels were created in those months
+   and years.
+3.     PID TTY          TIME CMD
+       2779334 ?        00:00:00 systemd
+       2779336 ?        00:00:00 (sd-pam)
+       2779344 ?        00:00:00 sshd
+       2779345 pts/54   00:00:00 bash
+       2780502 pts/54   00:00:00 ps
+4. b. I notice that there's another sshd and bash. The process ID for the vim is 2783222.
+   c. I notice that vim has disappeared because we're not viewing & editing the file anymore since we quit
+5. The process id for the init process is 1.
+6. The command ps aux shows you all the processes that are currently running. It could help you see how your system is doing by showing if it's in good condition. So, it could be used to monitor any processes running. By using the command, you can be able to get more detailed information about all the processes.
