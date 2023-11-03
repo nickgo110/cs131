@@ -1,0 +1,22 @@
+ Task 1:  
+    4  1. wc -l last.fake
+    5  2. grep 'f23' last.fake > lastf23.fake
+    6  3. wc -l lastf23.fake
+ 
+ Task 2:
+   10  grep 'Sun' lastf23.fake | awk '{print $1}' | sort | uniq | awk 'BEGIN {print "The list of people who worked on Sunday are:"} {print} END {print "Kudos to these people for putting in the work"}'
+
+Task 3:
+   29  awk '$7 >= "23:00" || $7 <= "04:00"' lastf23.fake | awk 'BEGIN {print "Night Owls List:"} !seen[$1]++ {names[n++] = $1} END {asort(names); for(i=1; i<=n; i++) print names[i]; print "Night Owls are dope. Please ensure you get enough sleep though."}'
+
+Task 4: 
+   33  awk '$7 >= "05:00" && $7 <= "09:00"' lastf23.fake | awk 'BEGIN {print "Early Birds List:"} !seen[$1]++ {names[n++] = $1} END {asort(names); for(i=1; i<=n; i++) print names[i]; print "Early Birds are dope. Please ensure you get enough sleep though."}'
+
+Task 5:
+   45  awk '/^t/ {print $1}' lastf23.fake | uniq -u
+
+Task 6:
+   84  awk -F':' '$1 ~ /^a/ && $3 % 2 == 0 {print $1}' passwd.fake
+
+Task 7:
+   86  sed -r 's/[a-zA-Z0-9 ]//g' passwd.fake | sort -u
