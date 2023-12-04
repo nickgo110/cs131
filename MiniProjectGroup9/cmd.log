@@ -1,0 +1,553 @@
+    1  history -w
+    2  history -w
+    3  history
+    4  wc -l last.fake
+    5  grep 'f23' last.fake > lastf23.fake
+    6  wc -l lastf23.fake
+    7  touch Assignment3.txt
+    8  vi Assignment3.txt 
+    9  view lastf23.fake
+   10  grep 'Sun' lastf23.fake | awk '{print $1}' | sort | uniq | awk 'BEGIN {print "The list of people who worked on Sunday are:"} {print} END {print "Kudos to these people for putting in the work"}'
+   11  vi Assignment3.txt
+   12  awk -F':' '($2 >= 23 || $2 <= 4) {print $1}' lastf23.fake | sort | uniq
+   13  awk -F':' '($2 >= 23 || $2 <= 4) {print $1}' lastf23.fake | sort | uniq |awk 'BEGIN {print "Night Owls List:"} {print} END {print "Night Owls are dope. Please ensure you get enough sleep though."}'
+   14  awk -F'[:,]' '($2 >= 23 || $2 <= 4) {print $1}' lastf23.fake | sort | uniq
+   15  history
+   16  awk -F':' '($2 >= 23 || $2 <= 4) {print $1}' lastf23.fake | sort | uniq | awk 'BEGIN {print "Night Owls List:"} {print} END {print "Night Owls are dope. Please ensure you get enough sleep though."}'
+   17  awk -F':' 'BEGIN {print "Night Owls List:"} ($2 >= 23 || $2 <= 4) {print $1} END {print "Night Owls are dope. Please ensure you get enough sleep though."}' lastf23.fake | sort | uniq
+   18  awk -F':' '($2 >= 23 || $2 <= 4) {print $1}' lastf23.fake | sort | uniq
+   19  awk -F':' '($2 >= 23 && $2 <= 4) {print $1}' lastf23.fake | sort | uniq
+   20  awk -F':' '($2 >= 23 && $2 <= 4) {print}' lastf23.fake | sort | uniq
+   21  awk -F':' '($2 >= 23 && $2 <= 4) {print $1}' lastf23.fake | sort -u | uniq
+   22  ls
+   23  awk { print } spotify-2023.csv
+   24  awk '{ print }' spotify-2023.csv
+   25  cd myproject/
+   26  cd cs131
+   27  ls
+   28  cd Assignment3
+   29  awk '$7 >= "23:00" || $7 <= "04:00"' lastf23.fake | awk 'BEGIN {print "Night Owls List:"} !seen[$1]++ {names[n++] = $1} END {asort(names); for(i=1; i<=n; i++) print names[i]; print "Night Owls are dope. Please ensure you get enough sleep though."}'
+   30  ls
+   31  cd Assignment3.txt
+   32  vi Assignment3.txt 
+   33  awk '$7 >= "05:00" && $7 <= "09:00"' lastf23.fake | awk 'BEGIN {print "Early Birds List:"} !seen[$1]++ {names[n++] = $1} END {asort(names); for(i=1; i<=n; i++) print names[i]; print "Early Birds are dope. Please ensure you get enough sleep though."}'
+   34  vi Assignment3.txt
+   35  awk -F':' '$1 ~ /^t/' lastf23.fake
+   36  awk -F':' '$1 ~ /^t/' lastf23.fake | uniq
+   37  awk -F':' '$1 ~ /^t/ {print $1}' lastf23.fake | uniq
+   38  awk -F':' '$1 ~ /^t/ {print $1}' lastf23.fake
+   39  awk '/^t/ {print $1}' lastf23.fake
+   40  awk '/^t/ {print $1}' lastf23.fake | uniq
+   41  awk -F '/^t/ {print $1}' lastf23.fake | uniq
+   42  awk -F':' '/^t/ {print $1}' lastf23.fake | uniq
+   43  awk '/^t/ {print $1}' lastf23.fake
+   44  awk -F':' '/^t/ {print $1}' lastf23.fake
+   45  awk '/^t/ {print $1}' lastf23.fake | uniq -u
+   46  awk -F: '{ print $1 }' lastf23.fake
+   47  vi Assignment3.txt
+   48  view passwd.fake
+   49  awk -F':' '$1 ~ /^a/ && $3 % 2 == 0' passwd.fake
+   50  awk -F':' '$1 ~ /^a/ && $3 % 2 == 0 {print $1}' passwd.fake
+   51  awk -F: $1 ~ /^a/ && $3 % 2 == 0 {print $1}' passwd.fake
+   52  awk -F':' '/^a/ && $3 % 2 == 0 {print $1}' passwd.fake
+   53  awk -F '/^a/ && $3 % 2 == 0 {print $1}' passwd.fake
+   54  cat passwd.fake
+   55  exit
+   56  awk '/^t/ {print $1}' lastf23.fake | sort | uniq
+   57  cd cs131
+   58  cd myproject
+   59  cd cs131
+   60  cd Assignment3
+   61  awk '/^t/ {print $1}' lastf23.fake | sort | uniq
+   62  exit
+   63  cd myproject
+   64  cd cs131
+   65  cd Assignment3
+   66  ls
+   67  view ps.fake
+   68  awk -F':' '$1 ~ /^a/ && $3 % 2 == 0' ps.fake
+   69  wget https://github.com/khanchandaniashish/CS131/blob/main/awkdata/passwd.fake 
+   70  view passwd.fake.1
+   71  awk -F':' '$1 ~ /^a/ && $3 % 2 == 0' passwd.fake.1
+   72  view passwd.fake
+   73  view ps.fake
+   74  wget https://github.com/khanchandaniashish/CS131/blob/main/awkdata/passwd.fake
+   75  view passwd.fake.2
+   76  awk -F':' '$1 ~ /^a/ && $3 % 2 == 0' passwd.fake.2
+   77  view passwd.fake.2
+   78  view ps.fake
+   79  vi passwd.fake
+   80  cat > passwd.fake
+   81  view passwd.fake
+   82  awk -F':' '$1 ~ /^a/ && $3 % 2 == 0' passwd.fake.2
+   83  awk -F':' '$1 ~ /^a/ && $3 % 2 == 0' passwd.fake
+   84  awk -F':' '$1 ~ /^a/ && $3 % 2 == 0 {print $1}' passwd.fake
+   85  vi Assignment3.txt
+   86  sed -r 's/[a-zA-Z0-9 ]//g' passwd.fake | sort -u
+   87  vi Assignment3.txt
+   88  ls
+   89  rm passwd.fake.1
+   90  rm passwd.fake.2
+   91  ls
+   92  history > cmds.log
+   93  vi cmds.log
+   94  view Assignment3.txt
+   95  cd ..
+   96  git status
+   97  git add .
+   98  git commit -m "Assignment3"
+   99  git push origin main
+  100  git pull origin main
+  101  git push origin main
+  102  exit
+  103  ls
+  104  rm spotify-2023.csv
+  105  mkdir loops
+  106  cd loops
+  107  exit
+  108  wget https://github.com/nickgo110/cs131/blob/main/imdb_anime.csv
+  109  view 'imdb_anime.csv'
+  110  wget https://raw.githubusercontent.com/nickgo110/cs131/blob/main/imdb_anime.csv
+  111  wget https://raw.github.com/nickgo110/cs131/blob/main/imdb_anime.csv
+  112  wget https://raw.github.com/nickgo110/cs131/main/imdb_anime.csv
+  113  view 'imdb_anime.csv.1'
+  114  wc -l 'imdb_anime.csv.1'
+  115  ls
+  116  cd cs131
+  117  cd myproject
+  118  ls
+  119  wc -l spotify-2023.csv 
+  120  cd ..
+  121  exit
+  122  ls
+  123  view imdb_anime.csv.1
+  124  cd myproject
+  125  cd cs131
+  126  mkdir MiniProjectGroup9
+  127  touch names.txt
+  128  cd MiniProjectGroup9
+  129  touch names.txt
+  130  ls
+  131  vi names.txt
+  132  history
+  133  wget https://raw.github.com/nickgo110/cs131/main/imdb_anime.csv
+  134  view imdb_anime.csv
+  135  view 'imdb_anime.csv'
+  136  cd ..
+  137  git status
+  138  cd MiniProjectGroup9/
+  139  ls
+  140  cd ..
+  141  git add .
+  142  git commit -m "Mini Project Group 9"
+  143  git push origin main
+  144  git pull origin main
+  145  git push origin main
+  146  git clone https://github.com/nickgo110/cs131/tree/main/MiniProjectGroup9
+  147  history
+  148   wget https://raw.github.com/nickgo110/cs131/main/imdb_anime.csv
+  149  cd cs131
+  150  cd myproject
+  151  cd cs131
+  152  ls
+  153  view imdb_anime.csv 
+  154  awk '{ print $1 } < imdb_anime.csv
+  155  awk '{ print $1 } imdb_anime.csv
+  156  awk '{ print $1 }' imdb_anime.csv
+  157  :q
+  158  view imdb_anime.csv 
+  159  awk '{ print $11 }' imdb_anime.csv
+  160  :q
+  161  exit
+  162  history
+  163  cd myproject
+  164  cd cs131
+  165  ls
+  166  awk '{print $1-$3 }' imdb_anime.csv
+  167  awk '{print $1 }' imdb_anime.csv
+  168  awk '{print $3 }' imdb_anime.csv
+  169  awk '{print $4 }' imdb_anime.csv
+  170  awk '{print $3 }' imdb_anime.csv
+  171  awk '{print $7 }' imdb_anime.csv
+  172  awk '{print $15 }' imdb_anime.csv
+  173  awk '{print $14 }' imdb_anime.csv
+  174  awk '{print $120 }' imdb_anime.csv
+  175  awk '{print $20 }' imdb_anime.csv
+  176  awk '{print $5 }' imdb_anime.csv
+  177  awk '{print $7 }' imdb_anime.csv
+  178  view imdb_anime.csv
+  179  awk '{ print $1 }' imdb_anime.csv
+  180  :q
+  181  awk '{ print $2 }' imdb_anime.csv
+  182  awk '{ print $3 }' imdb_anime.csv
+  183  awk '{ print $4 }' imdb_anime.csv
+  184  cd myproject
+  185  cd cs131
+  186  ls
+  187  cd ..
+  188  ls
+  189  awk '{ print $1 }' spotify-2023.csv 
+  190  awk '{ print $2 }' spotify-2023.csv 
+  191  awk '{ print $3 }' spotify-2023.csv 
+  192  view spotify-2023.csv 
+  193  cd ..
+  194  exit
+  195  cd myproject
+  196  cd cs131
+  197  ls
+  198  wc -l imdb_anime.csv
+  199  view imdb_anime.csv 
+  200  wc -l imdb_anime.csv
+  201  view imdb_anime.csv 
+  202  view imdb_anime.csv
+  203  awk '{ print $4 }' imdb_anime.csv 
+  204  awk '{ print $7 }' imdb_anime.csv 
+  205  awk '{ print $10 }' imdb_anime.csv 
+  206  view imdb_anime.csv
+  207  ls
+  208  cd ..
+  209  ls
+  210  awk '{ print $1 }' spotify-2023.csv 
+  211  view imdb_anime.csv
+  212  cd cs131
+  213  view imdb_anime.csv
+  214  ls
+  215  cd ..
+  216  ls
+  217  view spotify-2023.csv 
+  218  cd cs131
+  219  ls
+  220  view imdb_anime.csv 
+  221  awk '{ print $6 }' imdb_anime.csv 
+  222  awk '{ print $8 }' imdb_anime.csv 
+  223  awk '{ print $10 }' imdb_anime.csv 
+  224  awk '{ print $11 }' imdb_anime.csv
+  225  awk '{ print $5 }' imdb_anime.csv
+  226  awk '{ print $7 }' imdb_anime.csv
+  227  view imdb_anime.csv
+  228  cd myproject
+  229  cd cs131
+  230  ls
+  231  view imdb_anime.csv 
+  232  wget https://github.com/nickgo110/cs131/blob/main/japanese_anime.csv
+  233  view 'japanese_anime.csv'
+  234  history
+  235  wget https://github.com/nickgo110/cs131/main/japanese_anime.csv
+  236  wget https://raw.github.com/nickgo110/cs131/main/japanese_anime.csv
+  237  view 'japanese_anime.csv.1'
+  238  grep "198" 'japanese_anime.csv.1' | cut -d ',' -f 4 | paste -sd+ - | bc > total_votes.txt
+  239  grep "1980" 'japanese_anime.csv.1' | cut -d ',' -f 4 | paste -sd+ - | bc > total_votes.txt
+  240  grep "1980" 'japanese_anime.csv.1' | cut -d ',' -f 4 | paste -sd+ | bc > total_votes.txt
+  241  ls
+  242  grep "198" japanese_anime.csv.1 | cut -d ',' -f 4 | paste -sd+ | bc > total_votes.txt
+  243  view japanese_anime.csv.1
+  244  grep "198" japanese_anime.csv.1 | cut -d ',' -f 4 | paste -sd+ | b
+  245  grep "198" japanese_anime.csv.1 | cut -d ',' -f 4 | paste -sd+ | bc
+  246  grep "Action" japanese_anime.csv.1 | cut -d ',' -f 4 | paste -sd+ | bc
+  247  grep "Action" 'japanese_anime.csv.1' | cut -d ',' -f 4 | paste -sd+ | bc
+  248  grep "Action" 'japanese_anime.csv.1'
+  249  grep "(198" 'japanese_anime.csv.1' | cut -d ',' -f 4 | paste -sd+ | bc
+  250  grep "(198" 'japanese_anime.csv.1'
+  251  grep "(198" 'japanese_anime.csv.1' | cut -d ',' -f 4 | paste -sd+ - | bc
+  252  grep "(198" 'japanese_anime.csv.1' | cut -d ',' -f 4
+  253  grep "198" 'japanese_anime.csv.1' | cut -d ',' -f 4
+  254  grep "198" 'japanese_anime.csv.1' | cut -d ',' -f 5
+  255  grep "198" 'japanese_anime.csv.1' | cut -d ',' -f 6
+  256  grep "198" 'japanese_anime.csv.1' | cut -d ',' -f 5
+  257  grep "198" 'japanese_anime.csv.1' | cut -d ',' -f 4
+  258  grep "198" 'japanese_anime.csv.1' | cut -d ',' -f 3
+  259  grep "198" 'japanese_anime.csv.1' | cut -d ',' -f 7
+  260  grep "198" 'japanese_anime.csv.1' | cut -d ',' -f 6
+  261  grep "198" 'japanese_anime.csv.1' | cut -d ',' -f 5
+  262  grep "198" 'japanese_anime.csv.1' | cut -d ',' -f 4
+  263  grep "198" 'japanese_anime.csv.1' | cut -d ',' -f 8
+  264  grep "198" 'japanese_anime.csv.1' | cut -d ',' -f 7
+  265  grep "198" 'japanese_anime.csv.1' | cut -d ',' -f 6
+  266  grep "198" 'japanese_anime.csv.1' | cut -d ',' -f 6 | paste -sd+ - | bc
+  267  grep "198" 'japanese_anime.csv.1' | cut -d ',' -f 4 | paste -sd+ - | bc
+  268  cut -d' ' -f4 japanese_anime.csv.1
+  269  awk -F , -v OFS='\t' 'NR == 1 || $6 > 4 {print $4}' japanese_anime.csv.1
+  270  awk -F , -v OFS='\t' 'NR == 1 || $6 > 4 {print $5}' japanese_anime.csv.1
+  271  awk -F , -v OFS='\t' 'NR == 1 || $6 > 4 {print $6}' japanese_anime.csv.1
+  272  awk '{x=$6; gsub(",", "", x); sum+=x; print} END{print sum}'
+  273  awk '{x=$6; gsub(",", "", x); sum+=x; print} END{print sum}' japanese_anime.csv.1
+  274  awk '{x=$5; gsub(",", "", x); sum+=x; print} END{print sum}' japanese_anime.csv.1
+  275  cut -d ',' -f 4 japanese_anime.csv.1 | paste -sd+ - | bc
+  276  exit
+  277  cd myproject
+  278  cd cs131
+  279  ls
+  280  view japanese_anime_csv
+  281  view japanese_anime.csv
+  282  view japanese_anime.csv.1
+  283  grep '1980' japanese_anime.csv.1 | cut -d',' -f5 | paste -sd+ - | bc
+  284  view japanese_anime.csv.1
+  285  awk -F ',' $6 == "1980" {sum += $4} END {print sum}' japanese_anime.csv.1
+  286  awk -F ',' '$6 == "1980" {sum += $4} END {print sum}' japanese_anime.csv.1
+  287  awk -F ',' '$7 == "1980" {sum += $4} END {print sum}' japanese_anime.csv.1
+  288  grep '(1980)' japanese_anime.csv.1 | cut -d',' -f5 | paste -sd+ - | bc
+  289  grep '(1980)' 'japanese_anime.csv.1' | cut -d',' -f5 | paste -sd+ - | bc
+  290  grep '(1980)' 'japanese_anime.csv.1' | cut -d',' -f4 | paste -sd+ - | bc
+  291  grep '(1980)' 'japanese_anime.csv.1' | cut -d',' -f6 | paste -sd+ - | bc
+  292  grep '(1980)' 'japanese_anime.csv.1' | cut -d',' -f3 | paste -sd+ - | bc
+  293  cut -d',' -f3
+  294  mkdir CapstoneProject
+  295  cd CapstoneProject
+  296  cd ..
+  297  ls
+  298  cd CapstoneProject
+  299  https://raw.github.com/nickgo110/cs131/main/japanese_anime.csv
+  300  wget https://raw.github.com/nickgo110/cs131/main/japanese_anime.csv
+  301  ls
+  302  cut -d'' -f 4 japanese_anime.csv | paste -sd+ | bc
+  303  cut -d' ' -f 4 japanese_anime.csv | paste -sd+ | bc
+  304  cut -d' ' -f 5 japanese_anime.csv | paste -sd+ | bc
+  305  cut -d' ' -f 3 japanese_anime.csv | paste -sd+ | bc
+  306  # awk -F "," '{ sum += $2 } END { print sum }' test.txt
+  307  awk -F "," '{ sum += $4 } END { print sum }' japanese_anime.csv
+  308  awk -F "," '{ sum += $3 } END { print sum }' japanese_anime.csv
+  309  awk -F "," '{ sum += $5 } END { print sum }' japanese_anime.csv
+  310  awk -F "," '{ sum += $6 } END { print sum }' japanese_anime.csv
+  311  awk -F "," '{ sum += $2 } END { print sum }' japanese_anime.csv
+  312  awk -F '{ sum += $2 } END { print sum }' japanese_anime.csv
+  313  awk -F "," '{ sum += $4 } END { print sum }' japanese_anime.csv
+  314  grep "1980 japanese_anime.csv | awk -F "," '{ sum += $4 } END { print sum }'
+  315  grep "1980" japanese_anime.csv | awk -F "," '{ sum += $4 } END { print sum }'
+  316  view japanese_anime.csv
+  317  $ awk -F"," '{print;x+=$4}END{print "Total " x}' japanese_anime.csv
+  318  $ awk -F "," '{print;x+=$4}END{print "Total " x}' japanese_anime.csv
+  319  $ awk -F "," '{print x+=$4}END{print "Total " x}' japanese_anime.csv
+  320  $ awk -F "," '{ x+=$4}END{print "Total " x}' japanese_anime.csv
+  321  $ awk -F "," '{x+=$4}END{print "Total " x}' japanese_anime.csv
+  322  $ awk -F "," '{x+=$4}END{print x}' japanese_anime.csv
+  323  $ awk -F "," '{ sum += $4 } END { print sum }' japanese_anime.csv
+  324  $awk -F "," '{ sum += $4 } END { print sum }' japanese_anime.csv
+  325  awk -F "," '{ sum += $4 } END { print sum }' japanese_anime.csv
+  326  view japanese_anime.csv
+  327  cat ChocolatePrices.txt | awk ‘ { sum += $2 } END { print sum } ’
+  328  cat japanese_anime.csv | awk '{ sum += $2 } END { print sum }'
+  329  cat japanese_anime.csv | awk '{ sum += $4 } END { print sum }'
+  330  cat japanese_anime.csv | awk '{ sum += $5 } END { print sum }'
+  331  cat japanese_anime.csv | awk '{ sum += $3 } END { print sum }'
+  332  awk -F "," '{ sum += $4 } END { print sum }' japanese_anime.csv
+  333  awk '{Total=Total+$1} END{print "Total is: " Total}' japanese_anime.csv
+  334  awk '{Total=Total+$4} END{print "Total is: " Total}' japanese_anime.csv
+  335  view japanese_anime.csv
+  336  grep "Number of Votes" japanese_anime.csv | bc
+  337  awk -F "," '{Total=Total+$4} END{print "Total is: " Total}' prices.csv
+  338  awk -F "," '{Total=Total+$4} END{print "Total is: " Total}' japanese_anime.csv
+  339  cut -d',' f4
+  340  cut -d',' f4 japanese_anime.csv
+  341  cut -d',' -f4 japanese_anime.csv
+  342  cut -d, -f4 japanese_anime.csv 
+  343  cut -d, -f5 japanese_anime.csv 
+  344  cut -d, -f6 japanese_anime.csv 
+  345  cut -d, -f6 japanese_anime.csv | bc
+  346  cut -d, -f6 japanese_anime.csv | awk '{ sum += $6 } END { print sum };
+  347  cut -d, -f6 japanese_anime.csv | awk '{ sum += $6 } END { print sum }'
+  348  cat file.csv | cut -d "|" -f3 | sort | uniq -c | sort -rn | head
+  349  cat japanese_anime.csv | cut -d "," -f3 | sort | uniq -c | sort -rn | head
+  350  cat japanese_anime.csv | cut -d "," -f4 | sort | uniq -c | sort -rn | head
+  351  cat japanese_anime.csv | cut -d "," -f5 | sort | uniq -c | sort -rn | head
+  352  cat japanese_anime.csv | cut -d "," -f6 | sort | uniq -c | sort -rn | head
+  353  cat japanese_anime.csv | cut -d "," -f7 | sort | uniq -c | sort -rn | head
+  354  cat japanese_anime.csv | cut -d "," -f8 | sort | uniq -c | sort -rn | head
+  355  cat japanese_anime.csv | cut -d "," -f3 | sort | uniq -c | sort -rn | head
+  356  cat japanese_anime.csv | cut -d "," -f4 | sort | uniq -c | sort -rn | head
+  357  cat japanese_anime.csv | cut -d "," -f5 | sort | uniq -c | sort -rn | head
+  358  cat japanese_anime.csv | cut -d "," -f6 | sort
+  359  cat japanese_anime.csv | cut -d "," -f6
+  360  sed -e 's/,/\n/g' tmp.txt | awk 'BEGIN {total=0} {total += $1} END {print total}'
+  361  sed -e 's/,/\n/g' japanese_anime.csv | awk 'BEGIN {total=0} {total += $4} END {print total}'
+  362  sed -e 's/,/\n/g' japanese_anime.csv | awk 'BEGIN {total=0} {total += $6} END {print total}'
+  363  sed -e 's/,/\n/g' japanese_anime.csv | awk 'BEGIN {total=0} {total += $3} END {print total}'
+  364  column_number=$(head -1 your_file.csv | tr ',' '\n' | nl | grep 'Number of Votes' | cut -f1)
+  365  tail -n +2 your_file.csv | cut -d',' -f$column_number | paste -sd+ - | bccolumn_number=$(head -1 your_file.csv | tr ',' '\n' | nl | grep 'Number of Votes' | cut -f1)
+  366  tail -n +2 japanese_anime.csv | cut -d',' -f$4 | paste -sd+ - | bc4=$(head -1 japanese_anime.csv | tr ',' '\n' | nl | grep 'Number of Votes' | cut -f1)
+  367  column_number=$(head -1 your_file.csv | tr ',' '\n' | nl | grep 'Number of Votes' | cut -f1)
+  368  head -1 japanese_anime.csv | tr ',' '\n
+  369  head -1 japanese_anime.csv | tr ',' '\n' | n1 | grep 'Number of Votes | cut -f4 | tail -n +2 japanese_anime.csv | cut -d',' -f4 | paste -sd+ - | bc
+  370  head -1 japanese_anime.csv | tr ',' '\n' | n1 | grep 'Number of Votes' | cut -f4 | tail -n +2 japanese_anime.csv | cut -d',' -f4 | paste -sd+ - | bc
+  371  head -1 japanese_anime.csv | tr ',' '\n' | n1 | grep 'Number of Votes' | cut -f4 | cut -d',' -f4 | paste -sd+ - | bc
+  372  grep 'Number of Votes' japanese_anime.csv | cut -d',' -f4 | bc
+  373  grep 'Number of Votes' japanese_anime.csv
+  374  grep 'Number of Votes' japanese_anime.csv | cut -d',' -f4 | bc
+  375  column_number=$(head -1 your_file.csv | tr ',' '\n' | nl | grep 'Number of Votes' | cut -f1)
+  376  column_number=$(head -1 japanese_anime.csv | tr ',' '\n' | nl | grep 'Number of Votes' | cut -f1)
+  377  tail -n +2 your_file.csv | cut -d',' -f$column_number | paste -sd+ - | bc
+  378  tail -n +2 japanese_anime.csv | cut -d',' -f$column_number | paste -sd+ - | bc
+  379  awk -F, '$1=="Number of Votes"{x+=$4;}END{print x}' japanese_anime.csv 
+  380  awk -F, {x+=$4;}END{print x}' japanese_anime.csv 
+  381  awk -F, '{x+=$4;}END{print x}' japanese_anime.csv 
+  382  awk -F',' '{ sum += $4 } END { print sum } japanese_anime.csv
+  383  awk -F',' '{ sum += $4 } END { print sum }' japanese_anime.csv
+  384  grep "1980" japanese_anime.csv | awk -F',' '{ sum += $4 } END { print sum }' japanese_anime.csv
+  385  grep "1980" japanese_anime.csv | awk -F',' '{ sum += $4 } END { print sum }'
+  386  grep "1990" japanese_anime.csv | awk -F',' '{ sum += $4 } END { print sum }'
+  387  grep "2000" japanese_anime.csv | awk -F',' '{ sum += $4 } END { print sum }'
+  388  grep "2010" japanese_anime.csv | awk -F',' '{ sum += $4 } END { print sum }'
+  389  awk '{split($0,a,","); sum += a[57]} END {print sum}' 
+  390  awk '{split($0,a,","); sum += a[57]} END {print sum}' japanese_anime.csv 
+  391  awk '{split($0,a,","); sum += a[4]} END {print sum}' japanese_anime.csv 
+  392  awk '{split($0,a,","); sum += a[5]} END {print sum}' japanese_anime.csv 
+  393  awk '{split($0,a,","); sum += a[6]} END {print sum}' japanese_anime.csv 
+  394  awk '{split($0,a,","); sum += a[7]} END {print sum}' japanese_anime.csv 
+  395  awk '{split($0,a,","); sum += a[3]} END {print sum}' japanese_anime.csv 
+  396  grep '1980' japanese_anime.csv | awk '{split($0,a,","); sum += a[3]} END {print sum}'
+  397  grep '1990' japanese_anime.csv | awk '{split($0,a,","); sum += a[3]} END {print sum}'
+  398  grep '1990' japanese_anime.csv | awk '{split($0,a,","); sum += a[4]} END {print sum}'
+  399  awk '{ print $7 }' japanese_anime.csv 
+  400  awk '{ print $10 }' japanese_anime.csv 
+  401  awk '{ print $9 }' japanese_anime.csv 
+  402  awk '{ print $11 }' japanese_anime.csv 
+  403  awk '{ print $4 }' japanese_anime.csv 
+  404  view japanese_anime.csv 
+  405  cut -d',' -f[4] japanese_anime.csv | grep -v 'NonNumericOrHeader' | paste -sd+ - | bc
+  406  cut -d',' -f4 japanese_anime.csv | grep -v 'NonNumericOrHeader' | paste -sd+ - | bc
+  407  cut -d',' -f4 japanese_anime.csv | grep -v 'Numer of Votes' | paste -sd+ - | bc
+  408  cut -d, -f3 your_dataset.csv
+  409  cut -d, -f3 japanese_anime.csv
+  410  cut -d, -f4 japanese_anime.csv
+  411  cut -d, -f5 japanese_anime.csv
+  412  cut -d, -f6 japanese_anime.csv
+  413  cut -d, -f6 japanese_anime.csv | bc
+  414  wget https://raw.github.com/nickgo110/cs131/main/anime.csv
+  415  awk '{ print $2 } anime.csv
+  416  awk '{ print $2 }' anime.csv
+  417  awk '{ print $3 }' anime.csv
+  418  awk '{ print $2 }' anime.csv
+  419  awk '{ print $1 }' anime.csv
+  420  awk -F',' '{ print $1 }' anime.csv
+  421  awk -F',' '{ print $2 }' anime.csv
+  422  grep "1980" anime.csv | awk -F',' '{ print $2 }'
+  423  grep "1980" anime.csv | awk -F',' '{ sum += $2 } END { print sum }'
+  424  grep "1990" anime.csv | awk -F',' '{ sum += $2 } END { print sum }'
+  425  grep "2000" anime.csv | awk -F',' '{ sum += $2 } END { print sum }'
+  426  grep "2010" anime.csv | awk -F',' '{ sum += $2 } END { print sum }'
+  427  grep "2020" anime.csv | awk -F',' '{ sum += $2 } END { print sum }'
+  428  grep "1970" anime.csv | awk -F',' '{ sum += $2 } END { print sum }'
+  429  grep "1980" anime.csv | awk -F',' '{ sum += $2 } END { print sum }' > total_votes.txt
+  430  grep "1990" anime.csv | awk -F',' '{ sum += $2 } END { print sum }' >> total_votes.txt
+  431  grep "2000" anime.csv | awk -F',' '{ sum += $2 } END { print sum }' >> total_votes.txt
+  432  grep "2010" anime.csv | awk -F',' '{ sum += $2 } END { print sum }' >> total_votes.txt
+  433  vi total_votes.txt
+  434  grep "1980" anime.csv | awk -F',' '{ sum += $2 } END { print sum }' > total_gross.txt
+  435  grep "1990" anime.csv | awk -F',' '{ sum += $2 } END { print sum }' >> total_gross.txt
+  436  grep "2000" anime.csv | awk -F',' '{ sum += $2 } END { print sum }' >> total_gross.txt
+  437  grep "2010" anime.csv | awk -F',' '{ sum += $2 } END { print sum }' >> total_gross.txt
+  438  vi total_gross_txt
+  439  vi total_gross.txt
+  440  awk -F',' '{ print $1 } anime.csv
+  441  awk -F',' '{ print $1 }' anime.csv
+  442  awk -F',' '{ print $1 }' japanese_anime.csv
+  443  grep "1980" japanese_anime.csv | awk -F',' '{ sum += $4 } END { print sum }'  japanese_anime.csv
+  444   awk -F',' '{ sum += $4 } END { print sum }'  japanese_anime.csv
+  445   awk -F',' '{ sum += $4 } END { print sum }' japanese_anime.csv
+  446   awk -F',' '{ sum += $3 } END { print sum }' japanese_anime.csv
+  447   awk -F',' '{ sum += $2 } END { print sum }' anime.csv
+  448  history
+  449  awk -F',' '{ print $4 } japanese_anime.csv
+  450  awk -F',' '{ print $4 }' japanese_anime.csv
+  451  awk -F',' '{ print $5 }' japanese_anime.csv
+  452  awk -F',' '{ print $6 }' japanese_anime.csv
+  453  awk -F',' '{ print $2 }
+  454  awk -F',' '{ print $2 }' anime.csv
+  455  history
+  456  grep "1980" anime.csv | awk -F',' '{ sum += $2 } END { print sum }' > total_gross.txt
+  457  grep "1990" anime.csv | awk -F',' '{ sum += $2 } END { print sum }' >> total_gross.txt
+  458  grep "2000" anime.csv | awk -F',' '{ sum += $2 } END { print sum }' >> total_gross.txt
+  459  grep "2010" anime.csv | awk -F',' '{ sum += $2 } END { print sum }' >> total_gross.txt
+  460  view total_gross.txt
+  461  cd myproject
+  462  cd cs131
+  463  cd CapstoneProject
+  464  ls
+  465  awk -F',' '{ print $1 }' japanese_anime.csv 
+  466  :q
+  467  awk -F',' '{ print $10 }' japanese_anime.csv 
+  468  awk -F',' '{ print $11 }' japanese_anime.csv 
+  469  awk -F',' '{ print $12 }' japanese_anime.csv 
+  470  awk -F',' '{ print $13 }' japanese_anime.csv 
+  471  awk -F',' '{ print $14 }' japanese_anime.csv 
+  472  awk -F',' '{ print $12 }' japanese_anime.csv 
+  473  awk -F',' '{ print $2 }' japanese_anime.csv 
+  474  wget https://raw.github.com/nickgo110/cs131/main/japaneseanime.csv
+  475  awk -F',' ' { print $2 } japaneseanime.csv
+  476  awk -F',' '{ print $2 }' japaneseanime.csv
+  477  sort -k1,1nr -k2,2 japaneseanime.csv
+  478  head -n 1 file.txt > sorted.txt && tail -n +2 file.txt | sort -k [column_number] -nr >> sorted.txt
+  479  head -n 1 file.txt > sorted.txt && tail -n +2 japaneseanime.txt | sort -k [column_number] -nr > sorted.txt
+  480  head -n 1 japaneseanime.txt > sorted.txt && tail -n +2 japaneseanime.txt | sort -k [column_number] -nr > sorted.txt
+  481  cat sorted.txt
+  482  view sorted.txt
+  483  head -n 1 japaneseanime.txt > sorted.txt && tail -n +2 japaneseanime.txt | sort -k 2  -nr > sorted.txt
+  484  ls
+  485  sort -r 2 japaneseanime.txt
+  486  sort -r 2 japaneseanime.csv
+  487  view japaneseanime.csv
+  488  sort -nr japaneseanime.csv
+  489  :q
+  490  sort',' -nr japaneseanime.csv
+  491  sort -k',' nr japaneseanime.csv
+  492  sort -k',' -nr japaneseanime.csv
+  493  sort -t',' -nr japaneseanime.csv
+  494  sort -t',' -n japaneseanime.csv
+  495  sort -n japaneseanime.csv
+  496  sort -k 2 japaneseanime.csv
+  497  awk -F',' { print $2 } japaneseanime.csv
+  498  awk -F',' '{ print $2 }' japaneseanime.csv
+  499  awk -F',' '{ print $2 }' japaneseanime.csv | sort -nr
+  500  awk -F',' '{ print $2 }' japaneseanime.csv | sort -nr > sorted.txt
+  501  view sorted.txt
+  502  awk -F',' '{ print $1-$2 }' japaneseanime.csv | sort -nr > sorted.txt
+  503  view sorted.txt
+  504  awk -F ',' '{ print $1 }' | awk -F',' '{ print $2 }' japaneseanime.csv | sort -nr > sorted.txt
+  505  awk -F ',' '{ print $1 }' japaneseanime.csv | awk -F',' '{ print $2 }' | sort -nr > sorted.txt
+  506  view sorted.txt
+  507   awk -F',' '{ print $1-$2 }' japaneseanime.csv 
+  508  awk -F',' '{ print $1" "$2 }' japaneseanime.csv | sort -nr > sorted.txt
+  509  view sorted.txt
+  510  awk -F',' '{ print $1" "$2 }' japaneseanime.csv | sort -nr 2  > sorted.txt
+  511  awk -F',' '{ print $1" "$2 }' japaneseanime.csv | sort -nr 2 > sorted.txt
+  512  awk -F',' '{ print $1" "$2 }' japaneseanime.csv | sort -nr > sorted.txt
+  513  view sorted.txt
+  514  awk -F',' '{ print $2 }' japaneseanime.csv | sort -nr > sorted.txt
+  515  view sorted.txt
+  516  awk -F',' '{ print $2 }' japaneseanime.csv | sort -nr | awk -F',' '{ print $1 }' > sorted.txt
+  517  view sorted.txt
+  518  awk -F',' '{ print $2" "$1 }' japaneseanime.csv | sort -nr > sorted.txt
+  519  view sorted.txt
+  520  awk -F',' '{ print $2" "$1 }' japaneseanime.csv | sort -nr | head -5 > sorted.txt
+  521  view sorted.txt
+  522  awk -F',' '{ print $2" "$1 }' japaneseanime.csv | sort -nr | head -7 > sorted.txt
+  523  view sorted.txt
+  524  awk -F',' '{ print $2" "$1 }' japaneseanime.csv | sort -nr | head -8 > sorted.txt
+  525  view sorted.txt
+  526  awk -F',' '{ print $1" "$2 }' japaneseanime.csv | sort -nr | head -8 > sorted.txt
+  527  view sorted.txt
+  528  awk -F',' '{ print $2" "$1 }' japaneseanime.csv | sort -nr | head -8 > sorted.txt
+  529  view sorted.txt
+  530  ls
+  531  view japanese_anime.csv
+  532  sed 's/min//g' japanese_anime.csv > anime.txt
+  533  view anime.txt
+  534  cd ..
+  535  git add .
+  536  git commit -m "Capstone Project"
+  537  git push origin main
+  538  git pull origin main
+  539  gir push origin main
+  540  git push origin main
+  541  git pull
+  542  git pull origin main
+  543  git add .
+  544  git pull origin main
+  545  git commit -m "Capstone Project"
+  546  git push origin main
+  547  cd myproject
+  548  cd cs131
+  549  mv CapstoneProject.git MiniProjectGroup9.git
+  550  mv CapstoneProject MiniProjectGroup9
+  551  ls
+  552  cd MiniProjectGroup9
+  553  history > cmd.log
